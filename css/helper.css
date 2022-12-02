@@ -1,0 +1,43 @@
+.d-flex {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+.img-fluid {
+  width: 100%;
+}
+
+section.post {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-heading {
+  color: #000;
+  margin: 30px 0;
+  font-size: 36px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/*    <header>
+        <div class="header-sec">
+          <div class="site-info">
+            <h1>Heading</h1>
+            <p>set back | relax | wacth</p>
+          </div>
+        </div>
+        <div class="nav">
+          <ul>
+            <li><a href="javascript: ;">wacth </a></li>
+            <li><a href="javascript: ;">download </a></li>
+            <li><a href="javascript: ;">gallary </a></li>
+          </ul>
+        </div>
+      </header> */

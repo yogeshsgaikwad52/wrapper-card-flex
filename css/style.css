@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ededed;
+  font-family: "Asap", sans-serif;
+  line-height: 1.5;
+}
+
+.row {
+  display: flex;
+  flex: wrap;
+}
+
+.header {
+  height: 400px;
+  background-color: #000;
+  color: #fff;
+  flex-direction: column;
+}
+
+.site-info {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nav {
+  background-color: #f6d200;
+}
+.site-info h1 {
+  font-size: 64px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.site-info p {
+  font-size: 24px;
+  font-style: italic;
+  color: #f6d200;
+  font-weight: bold;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+}
+.nav ul li {
+  flex-grow: 1;
+}
+
+.nav ul li a:link,
+nav ul li a:visited {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: bold;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.nav ul li a:hover,
+.nav ul li a:focus,
+.nav ul li a:active {
+  background-color: #000;
+  color: #f6d200;
+}
+/* content area css */
+
+.content-area {
+  flex-direction: coloum;
+}
+.main-content-area {
+  background-color: rgb(233, 238, 222);
+}
+.sidebar {
+  background-color: blueviolet;
+}
+
+/* post sec css */
+.posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.post {
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.post-content {
+  margin-top: -10px;
+}
+.post-content h2 {
+  padding: 30px;
+  background-color: #f6d200;
+  text-align: center;
+  text-transform: capitalize;
+}
+.post-content p {
+  padding: 20px 40px;
+}
+
+/* Watch card css */
+.watch-card {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.watch-content {
+  padding: 30px;
+  font-weight: bold;
+}
+
+.watch-content h3 {
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 22px;
+}
+
+.watch-content h3,
+.watch-content p {
+  margin-top: 20px;
+}
+.watch-content a {
+  color: #fff;
+  text-decoration: underline;
+}
+.watch-img img {
+  height: 100%;
+}
+
+.watch-content p span {
+  margin-right: 15px;
+}
+
+/* download -section */
+
+.download-gener {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.download-cast img {
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.footer {
+  background-color: #000;
+}
+/* mediaqurey */
+@media all and (min-width: 1200px) {
+  .content-area {
+    flex-direction: row;
+  }
+  .sidebar {
+    flex: 0 0 400px;
+    /* flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 400px; */
+  }
+  .nav ul {
+    flex-direction: row;
+  }
+  .posts {
+    display: flex;
+    flex-direction: row;
+  }
+  .post.post-half {
+    width: 49%;
+  }
+  .post-one-third {
+    width: 32%;
+  }
+
+  .watch-card {
+    flex-direction: row;
+  }
+  .img-right .watch-img {
+    order: 1;
+  }
+}
