@@ -11,6 +11,7 @@ a:visited {
 }
 .img-fluid {
   width: 100%;
+  object-fit: cover;
 }
 
 section.post {

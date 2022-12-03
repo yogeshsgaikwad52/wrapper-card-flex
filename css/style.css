@@ -81,7 +81,10 @@ nav ul li a:visited {
   background-color: rgb(233, 238, 222);
 }
 .sidebar {
-  background-color: blueviolet;
+  background-color: rgb(233, 238, 222);
+}
+.scroll {
+  overflow: visible;
 }
 
 /* post sec css */
@@ -148,7 +151,23 @@ nav ul li a:visited {
 
 /* download -section */
 
+.download-link {
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+.download-img {
+  background-color: #000;
+}
+
 .download-gener {
+  margin-bottom: 10px;
+}
+
+.download-gener .download-cast {
   display: flex;
   flex-wrap: wrap;
 }
@@ -159,19 +178,94 @@ nav ul li a:visited {
   margin-left: 5px;
 }
 
+.download-cast h4 {
+  align-self: center;
+}
+.download-content {
+  background-color: #fff;
+  transform: translateY(-10px);
+}
+
+.download-info {
+  background-color: #fff;
+  padding: 20px 40px;
+}
+
+.download-rating {
+  background-color: #f6d200;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+/* gallary section css */
+
+.gallary-imgs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallary-img {
+  height: 250px;
+  flex-grow: 1;
+  margin: 0 0 8px 8px;
+}
+
+.gallary-img img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+/* 1,5,9 */
+.gallary-img:nth-child(4n + 1) {
+  flex-basis: 250px;
+}
+
+/* 2,6,10 */
+.gallary-img:nth-child(4n + 2) {
+  flex-basis: 325px;
+}
+/* 3,7 */
+.gallary-img:nth-child(4n + 3) {
+  flex-basis: 180px;
+}
+/* 4 */
+.gallary-img:nth-child(4n + 4) {
+  flex-basis: 420px;
+}
+
 .footer {
   background-color: #000;
 }
+
+.footer p {
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+  font-size: 28px;
+}
+
+.widget-content {
+  padding: 20px;
+  background-color: #fff;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
 /* mediaqurey */
 @media all and (min-width: 1200px) {
   .content-area {
     flex-direction: row;
   }
-  .sidebar {
+  .sidebar-section {
     flex: 0 0 400px;
     /* flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 400px; */
+  }
+
+  .sidebar {
+    padding: 5px 20px;
   }
   .nav ul {
     flex-direction: row;
@@ -192,5 +286,16 @@ nav ul li a:visited {
   }
   .img-right .watch-img {
     order: 1;
+  }
+
+  .download-content {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1200px) {
+  .post {
+    width: 48%;
   }
 }
